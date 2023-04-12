@@ -1,0 +1,243 @@
+$primary_body_background : #1e1510 !important;
+$primary_Card_Background : #31271e !important;
+$primary_Text_color: #908277 !important;
+$primary_title_color: #c08251 !important;
+
+html {
+  box-sizing: border-box;
+  padding: 0 1.577%;
+  background: $primary_body_background;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary_Text_color;
+  line-height: 1.4em;
+  text-transform: capitalize;
+  font-weight: 400;
+  background: $primary_body_background;
+}
+
+// nav sticky
+
+.navbar_Sticky {
+  position: relative;
+  z-index: 999;
+  height: auto;
+  width: 100%;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation:slide-down 0.7s;
+}
+
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  } 
+  100% {
+      opacity: 0.9;
+      transform: translateY(0);
+  } 
+}
+
+/*  Nav Items Start */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: 400;
+  max-height: initial;
+  color:$primary_Text_color;
+  background: $primary_body_background;
+  margin-right: auto;
+  justify-content: space-between;
+  padding: 16px 0px;
+}
+
+.navbar__item {
+  text-decoration: none;
+  color: inherit;
+  margin: 10px
+}
+
+.navbar__item:hover {
+  color: white !important;
+  transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+}
+
+
+/* Search From  */
+
+.search-widget input[type="text"] {
+  background: #4c3e35 !important;
+  color: $primary_Text_color;
+  border: none;
+}
+
+/*  Nav Items End */
+
+/* button  */
+
+.buttonColor {
+  background: $primary_title_color;
+  border: none;
+}
+
+.buttonColor:hover {
+  background: white !important;
+  color: black !important;
+  border: none;
+}
+
+
+/* Footer Lable */
+
+.marginTop {
+  margin-top: 2.5rem !important
+}
+
+.address {
+  line-height: 26px;
+  font-family: serif;
+  color: $primary_Text_color;
+}
+
+.logoRow {
+  display: inherit;
+}
+.textColor{
+  color: $primary_title_color;
+}
+
+/* Link section Footer */
+
+.link-item{
+  text-decoration: none;
+  font-size: 18px;
+  font-family: serif;
+  margin: auto;
+  color: $primary_Text_color;
+}
+.link-item:hover{
+  color: white !important;
+}
+
+.social-text {
+  height: 30px !important;
+  width: 30px !important;
+  background: white !important;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.payment-text {
+  height: 30px !important;
+  width: 40px !important;
+  background: white !important;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+// button style
+
+.commonButton {
+  color: #fff;
+  border: 3px solid #c08251;
+  background-image: -webkit-linear-gradient(30deg, #c08251 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #c08251 50%, transparent 50%);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.commonButton:hover {
+  background-position: 100%;  background-color: transparent;
+  border: 3px solid #c08251;
+  color: #c08251;
+}
+
+.imgHover:hover{
+  transform: scale(1.1);
+}
+
+.imgHover{
+  transition: transform .2s;
+}
+
+// card Style
+
+/* Card Nav Header */
+
+.cardNav {
+  line-height: 1;
+  text-align: center;
+  background: $primary_Card_Background;
+  border-radius: 7px 7px 0 0;
+  border-bottom: 3px solid $primary_body_background
+}
+
+/* CardContent */
+.cardContent {
+  line-height: 1;
+  text-align: center;
+  background: $primary_Card_Background;
+  border-radius: 0px 0px 0px 0px;
+  border-bottom: 3px solid $primary_body_background
+}
+
+/* Card Footer  */
+.cardFooter {
+  line-height: 1;
+  text-align: center;
+  background: $primary_Card_Background;
+  border-radius: 0px 0px 7px 7px;
+  border-bottom: 3px solid $primary_body_background
+}
+
+.cardBorder{
+  border: 4px solid $primary_title_color;
+}
+
+
+  // h2{
+  //   font-size:48px;
+  //   color:#FFF;
+  //   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  //   position:absolute;
+  //   z-index:2;
+  //   top:50%;
+  //   left:50%;
+  //   transform:translate(-50%, -50%);
+  //   margin:0;
+  // }
+  
+  
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  transform: scale(1);
+}
+
+.image-box:hover img {
+  transform: scale(1.3);
+}
